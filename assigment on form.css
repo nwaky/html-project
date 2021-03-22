@@ -1,0 +1,121 @@
+*{box-sizing: border-box;}
+
+body{
+	/*background-color:blue;*/
+	background-image: url('../images/indepo.JPG');
+	background-size:cover;
+
+}
+form{
+	width:40%;
+	padding:30px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	background-image: linear-gradient(white, blue, white);
+	border: 1px inset black;
+}
+
+
+}
+input{
+	margin-top:2px,
+}
+
+
+
+input:focus{outline:none;}
+
+input[type=email],input[type=password]{
+	height: 30px;
+	width: 200px;
+	border:none;
+	border-bottom: 2px solid sandybrown;
+	background-color:blue; 
+	color: #fff;
+	caret-color:black;
+	border: 4px inset black;
+}
+
+ #login{
+ 	background-color:linear-gradient(white, blue, white);
+	border:none;
+	font-size:19px;
+	padding:10px 30px;
+	font-family:sans-serif;
+	text-align:center;
+	border-radius:20px;
+ } 
+
+ .shadow{
+ 	box-shadow:5px 5px 30px 5px grey;
+ }
+ .hover:hover{
+ 	box-shadow:5px 5px 30px 5px blue;
+ }
+
+input[type=email]:focus, input[type=password]:focus {
+	background-color: blue;
+
+}
+
+fieldset{
+	padding: 50px;
+	padding-bottom: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 4px solid black;
+
+}
+
+legend:{
+	color:#ccc;
+	font-weight: bolder;
+}
+
+::placeholder{
+	color:#ccc;
+	opacity: 1 /*for firefox*/;
+};
+
+::ms-input-placeholder{color:white;}/*edge browser*/
+
+::ms-input-placeholder{color: white}/*IE browser*/
+
+
+label {
+  display: block;
+  margin: 1px;
+  padding: 1px;
+}
+
+.field {
+  margin: 1px;
+  padding: 1px;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+form:invalid {
+  border: 5px solid red;
+}
+
+input:valid {
+  background-color: green;
+}
+
+form:valid {
+  border: 5px solid green;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #c00000;
+}
