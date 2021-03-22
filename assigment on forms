@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>login portal</title>
+	<link rel="icon" href="images/nwaky.jpg">
+
+<meta name="title" content="nwaky technologies">
+<meta name="description" content="login page">
+<meta name="keyword" content="Employee login portal ">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<meta name="authour" content="nwaky">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/assignment login .css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
+</head>
+
+<body>
+<h1>login page </h1>
+<div class="container">
+<form class="format" action="succefully loged in.html">
+	<fieldset>
+		<legend>LOGIN</legend>
+		<div class="field">
+	<label>USERNAME</label><br>
+	<input type="email" name="email" required="true" placeholder="please enter your email adrress" max="90"><br><br>
+</div>
+
+<div class="field">
+	 <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 long " required="true" placeholder="Enter Your password" inputmode="alphanumeric" runat="server"><br>
+</div>
+
+  <label for="remember">
+               <input type="checkbox" id="remember" value="remember" runat="server" />
+               <span>Remember me on this computer</span>
+           </label>
+<asp:Button ID="LoginButton" CssClass="button loginButton" runat="server" Enabled="true"
+               OnClick="LoginButton_Click" />
+
+  <button class="default" id="login" name="Submit" value="LOGIN">LOGIN</button>
+
+  <br>
+</form>
+</fieldset>
+ <div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+</body>
